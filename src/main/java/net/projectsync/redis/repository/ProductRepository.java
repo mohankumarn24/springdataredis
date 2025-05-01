@@ -15,13 +15,13 @@ public class ProductRepository {
     private RedisTemplate template;
 
     public Product addProduct(Product product){
-        template.opsForHash().put(HASH_KEY,product.getId(),product);
+        template.opsForHash().put(HASH_KEY, product.getId(), product);
         return product;
     }
 
     public Product getProductById(int id){
         System.out.println("called findProductById() from DB");
-        return (Product) template.opsForHash().get(HASH_KEY,id);
+        return (Product) template.opsForHash().get(HASH_KEY, id);
     }
     
     public List<Product> getProducts(){
@@ -29,7 +29,7 @@ public class ProductRepository {
     }
 
     public String deleteProductById(int id){
-         template.opsForHash().delete(HASH_KEY,id);
+         template.opsForHash().delete(HASH_KEY, id);
         return "product removed !!";
     }
 }
