@@ -1,4 +1,4 @@
-package com.javatechie.redis;
+package net.projectsync.redis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

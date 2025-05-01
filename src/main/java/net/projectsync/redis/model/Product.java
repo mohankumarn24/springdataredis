@@ -1,4 +1,4 @@
-package com.javatechie.redis.model;
+package net.projectsync.redis.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;

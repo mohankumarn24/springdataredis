@@ -1,10 +1,10 @@
-package com.javatechie.redis.service;
+package net.projectsync.redis.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.javatechie.redis.model.Product;
-import com.javatechie.redis.repository.ProductRepository;
+import net.projectsync.redis.model.Product;
+import net.projectsync.redis.repository.ProductRepository;
 
 @Service
 public class ProductService {

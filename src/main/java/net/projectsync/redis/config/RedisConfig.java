@@ -1,4 +1,4 @@
-package com.javatechie.redis.config;
+package net.projectsync.redis.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

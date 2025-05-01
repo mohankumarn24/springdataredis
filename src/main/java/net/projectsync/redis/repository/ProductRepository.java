@@ -1,10 +1,10 @@
-package com.javatechie.redis.repository;
+package net.projectsync.redis.repository;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
-import com.javatechie.redis.model.Product;
+import net.projectsync.redis.model.Product;
 
 @Repository
 public class ProductRepository {
