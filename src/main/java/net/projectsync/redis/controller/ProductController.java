@@ -25,13 +25,13 @@ public class ProductController {
 
 	@ResponseStatus(value = HttpStatus.CREATED)
     @PostMapping
-    public Product addProduct(@RequestBody Product product) {
-    	return productService.addProduct(product);
+    public Product createProduct(@RequestBody Product product) {
+    	return productService.createProduct(product);
     }
 
     @ResponseStatus(value = HttpStatus.OK)
     @GetMapping("/{id}")
-    @Cacheable(key = "#id", value = "Product", unless = "#result.price > 10")
+    @Cacheable(key = "#id", value = "Product", unless = "#result.price > 1000")
     public Product getProductById(@PathVariable int id) {
     	return productService.getProductById(id);
     }

@@ -17,7 +17,7 @@ public class ProductRepository {
     @Autowired
     private RedisTemplate template;
 
-    public Product addProduct(Product product){
+    public Product createProduct(Product product){
         template.opsForHash().put(HASH_KEY, product.getId(), product);
         logger.info(String.format("Product with ID %s saved", product.getId()));
         return product;

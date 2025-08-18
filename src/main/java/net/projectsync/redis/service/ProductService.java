@@ -12,8 +12,8 @@ public class ProductService {
 	@Autowired
 	ProductRepository productRepository;
 	
-    public Product addProduct(Product product) {
-        return productRepository.addProduct(product);
+    public Product createProduct(Product product) {
+        return productRepository.createProduct(product);
     }
 
     public Product getProductById(int id) {
