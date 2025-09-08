@@ -11,5 +11,4 @@ public class SpringDataRedisExampleApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringDataRedisExampleApplication.class, args);
     }
-
 }

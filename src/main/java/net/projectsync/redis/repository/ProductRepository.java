@@ -12,7 +12,7 @@ import net.projectsync.redis.model.Product;
 public class ProductRepository {
 
 	private final Logger logger = LoggerFactory.getLogger(ProductRepository.class);
-    public static final String HASH_KEY = "PRODUCT";
+    private static final String HASH_KEY = "PRODUCT";
 
     @Autowired
     private RedisTemplate template;
